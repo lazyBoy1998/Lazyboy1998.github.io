@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://lazyboy1998.github.io/contact/index.html</loc>
+    <loc>https://lazyboy1998.github.io/friends/index.html</loc>
     
     <lastmod>2022-12-03</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://lazyboy1998.github.io/friends/index.html</loc>
+    <loc>https://lazyboy1998.github.io/contact/index.html</loc>
     
     <lastmod>2022-12-03</lastmod>
     
@@ -74,15 +74,6 @@
   </url>
   
   <url>
-    <loc>https://lazyboy1998.github.io/2021/03/14/ji-he-lei-de-qu-bie/</loc>
-    
-    <lastmod>2022-12-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lazyboy1998.github.io/2022/11/25/ji-suan-shi-jian-chai/</loc>
     
     <lastmod>2022-12-03</lastmod>
@@ -92,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://lazyboy1998.github.io/books/index.html</loc>
+    <loc>https://lazyboy1998.github.io/2021/03/14/ji-he-lei-de-qu-bie/</loc>
     
     <lastmod>2022-12-03</lastmod>
     
@@ -102,6 +93,15 @@
   
   <url>
     <loc>https://lazyboy1998.github.io/about/index.html</loc>
+    
+    <lastmod>2022-12-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lazyboy1998.github.io/books/index.html</loc>
     
     <lastmod>2022-12-03</lastmod>
     
@@ -146,15 +146,6 @@
   </url>
   
   <url>
-    <loc>https://lazyboy1998.github.io/2022/10/16/oracle-xiang-guan-zi-duan-jie-shi/</loc>
-    
-    <lastmod>2022-12-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lazyboy1998.github.io/2022/10/28/oracle-bang-ding-bian-liang/</loc>
     
     <lastmod>2022-12-03</lastmod>
@@ -164,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://lazyboy1998.github.io/2022/10/07/oracle/</loc>
+    <loc>https://lazyboy1998.github.io/2022/10/16/oracle-xiang-guan-zi-duan-jie-shi/</loc>
     
     <lastmod>2022-12-03</lastmod>
     
@@ -182,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://lazyboy1998.github.io/2022/10/08/oracle-shen-ji/</loc>
+    <loc>https://lazyboy1998.github.io/2022/10/07/oracle/</loc>
     
     <lastmod>2022-12-03</lastmod>
     
@@ -192,6 +183,15 @@
   
   <url>
     <loc>https://lazyboy1998.github.io/2022/10/13/oracle-indexing/</loc>
+    
+    <lastmod>2022-12-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lazyboy1998.github.io/2022/10/08/oracle-shen-ji/</loc>
     
     <lastmod>2022-12-03</lastmod>
     
@@ -290,7 +290,7 @@
   </url>
   
   <url>
-    <loc>https://lazyboy1998.github.io/2022/10/20/oracle-session/</loc>
+    <loc>https://lazyboy1998.github.io/2021/12/07/java-ji-he-rong-qi/</loc>
     
     <lastmod>2022-12-03</lastmod>
     
@@ -299,7 +299,7 @@
   </url>
   
   <url>
-    <loc>https://lazyboy1998.github.io/2021/12/07/java-ji-he-rong-qi/</loc>
+    <loc>https://lazyboy1998.github.io/2022/10/20/oracle-session/</loc>
     
     <lastmod>2022-12-03</lastmod>
     
@@ -356,6 +356,13 @@
   </url>
   
   <url>
+    <loc>https://lazyboy1998.github.io/tags/springboot/</loc>
+    <lastmod>2022-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://lazyboy1998.github.io/tags/hexo/</loc>
     <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -398,14 +405,14 @@
   </url>
   
   <url>
-    <loc>https://lazyboy1998.github.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
+    <loc>https://lazyboy1998.github.io/tags/python/</loc>
     <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://lazyboy1998.github.io/tags/python/</loc>
+    <loc>https://lazyboy1998.github.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
     <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
