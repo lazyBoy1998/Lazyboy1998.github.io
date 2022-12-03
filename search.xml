@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Springboot(一)</title>
+      <link href="/2022/12/03/springboot-yi/"/>
+      <url>/2022/12/03/springboot-yi/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Spring Boot是在Spring框架上创建的一个全新的框架，其设计目的是简化Spring应用的搭建和开发过程。开启Spring Boot有许多种方法可供选择，这里仅介绍使用<a href="http://start.spring.io/%E6%9D%A5%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84Spring">http://start.spring.io/来构建一个简单的Spring</a> Boot项目。具体可看链接<a href="https://mrbird.cc/%E5%BC%80%E5%90%AFSpring-Boot.html">https://mrbird.cc/%E5%BC%80%E5%90%AFSpring-Boot.html</a></p><p><img src="/2022/12/03/springboot-yi/image-20221203175529082.png"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>计算时间差</title>
       <link href="/2022/11/25/ji-suan-shi-jian-chai/"/>
       <url>/2022/11/25/ji-suan-shi-jian-chai/</url>
