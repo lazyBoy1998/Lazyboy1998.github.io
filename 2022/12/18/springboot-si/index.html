@@ -533,14 +533,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-12-18
+                    2023-01-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    223
+                    261
                 </div>
                 
 
@@ -565,24 +565,53 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="静态资源访问"><a href="#静态资源访问" class="headerlink" title="静态资源访问"></a>静态资源访问</h3><ul>
-<li>使用IDEA创建Spring Boot项目，会默认创建出classpath:/static/目录，静态资源一般放在这个自录下即可。</li>
-<li>如果默认的静态资源过滤策略不能满足开发需求，也可以自定义静态资源过滤策略。</li>
-<li>在application.properties中直接定义过滤规则和静态资源位置：</li>
-</ul>
-<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token key attr-name">spring.mvc.static-path-pattern</span><span class="token punctuation">=</span><span class="token value attr-value">/static/**</span>
-<span class="token key attr-name">spring.web.resources.static-locations</span><span class="token punctuation">=</span><span class="token value attr-value">classpath:/static/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+                <h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><p>安装MYSQL，下载地址<a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/mysql/">MySQL Community Server</a></p>
+<p><img src="/2022/12/18/springboot-si/image-20221231171033028.png" alt="image-20221231171033028"></p>
+<p>点击下载之后，可以选择跳过注册</p>
+<p><img src="/2022/12/18/springboot-si/image-20221231171110624.png" alt="image-20221231171110624"></p>
+<h3 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h3><p><strong>配置环境变量</strong></p>
+<p>变量名：MYSQL_HOME</p>
+<p>变量值：D:\mysql-8.0.31-winx64</p>
+<p><strong><img src="/2022/12/18/springboot-si/1435523-20180909150744140-2120125213.png" alt="img"></strong></p>
+<p><strong>生成data文件</strong></p>
+<p>进入D:\mysql-8.0.31-winx64\bin下(这里在说一下：这里的路径需要根据自己的实际安装位置进行调整，总之就是刚刚解压的文件放在那，就在哪打开~)</p>
+<p>执行命令：mysqld –initialize-insecure –user=mysql  在E:\python\mysql\mysql-8.0.12-winx64目录下生成data目录</p>
+<p><img src="/2022/12/18/springboot-si/image-20221231200142344.png" alt="image-20221231200142344"></p>
+<p><strong>安装MySQL</strong></p>
+<p>继续执行命令：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">mysqld <span class="token parameter variable">-install</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>过滤规则为/static/*,静态资源位置为classpath:/static/</p>
-<p>在新建项目的时候会自动创建</p>
-<p><img src="/2022/12/18/springboot-si/image-20221218205744421.png" alt="image-20221218205744421"></p>
-<h3 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传"></a>文件上传</h3><p>Spring Boot工程嵌入的tomcat限制了请求的文件大小，每个文件的配置最大为1MB,单次请求的文件的总数不能大于10Mb。<br>要更改这个默认值需要在配置文件（如application.properties)中加入两个配置</p>
-<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token key attr-name">spring.servlet.multipart.max-file-size</span><span class="token punctuation">=</span><span class="token value attr-value">10MB</span>
-<span class="token key attr-name">spring.servlet.multipart.max-request-size</span><span class="token punctuation">=</span><span class="token value attr-value">10MB</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 
+<p><img src="/2022/12/18/springboot-si/image-20221231200152765.png" alt="image-20221231200152765"></p>
+<p><strong>启动服务</strong></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">net start MySQL<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="拦截器"><a href="#拦截器" class="headerlink" title="拦截器"></a>拦截器</h3>
+<p><img src="/2022/12/18/springboot-si/image-20221231200202834.png" alt="image-20221231200202834"></p>
+<p><strong>登录MySQL</strong></p>
+<p>登录mysql:(因为之前没设置密码，所以密码为空，不用输入密码，直接回车即可）</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">mysql <span class="token parameter variable">-u</span> root <span class="token parameter variable">-p</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="/2022/12/18/springboot-si/image-20221231200417405.png" alt="image-20221231200417405"></p>
+<p><strong>设置（或修改）root用户密码</strong></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">use mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="/2022/12/18/springboot-si/image-20221231200621527.png" alt="image-20221231200621527"></p>
+<p> 修改密码</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ALTER <span class="token environment constant">USER</span> <span class="token string">'root'</span>@<span class="token string">'localhost'</span> IDENTIFIED WITH mysql_native_password BY <span class="token string">'123456'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>刷盘保存修改</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">flush privileges<span class="token punctuation">;</span> <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>再次登录就是密码123456了</p>
+<h3 id="Navcate-链接-mysql"><a href="#Navcate-链接-mysql" class="headerlink" title="Navcate 链接 mysql"></a>Navcate 链接 mysql</h3><p>cmd命令输入ipconfig</p>
+<p><img src="/2022/12/18/springboot-si/image-20221231203115795.png" alt="image-20221231203115795"></p>
+<p>然后在navcate登录</p>
+<p><img src="/2022/12/18/springboot-si/image-20221231203145501.png" alt="image-20221231203145501"></p>
+<p><img src="/2022/12/18/springboot-si/image-20221231203207330.png" alt="image-20221231203207330"></p>
+<p>输入mysql的密码就能连接上</p>
+<p><img src="/2022/12/18/springboot-si/image-20221231203308859.png" alt="image-20221231203308859"></p>
+
                 
             </div>
             <hr/>
@@ -1076,7 +1105,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2022</span>
+                <span id="year">2019-2023</span>
             
             <span id="year">2019</span>
             <a href="/about" target="_blank">懒修</a>
